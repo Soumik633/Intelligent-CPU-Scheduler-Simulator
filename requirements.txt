@@ -1,0 +1,19 @@
+pandas
+matplotlib
+tinkter
+
+
+pandas ->	Process performance tables and calculations
+matplotlib ->	Generate and display Gantt charts
+
+
+Install all dependencies:- 
+
+python -m pip install -r requirements.txt
+
+
+
+Verify installation:-
+
+python -m pip show pandas
+python -m pip show matplotlib

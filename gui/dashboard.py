@@ -1907,7 +1907,16 @@ class CPUSchedulerDashboard:
 
         fig.set_size_inches(11, 2.7)
 
-        fig.tight_layout()
+        # Reserve enough space at the top so the Matplotlib title is not clipped.
+        # This works whether create_gantt_chart uses an axes title or a figure title.
+        suptitle = getattr(fig, "_suptitle", None)
+        if suptitle is not None:
+            suptitle.set_y(0.94)
+
+        if ax is not None and ax.get_title():
+            ax.set_title(ax.get_title(), fontsize=14, pad=12)
+
+        fig.tight_layout(rect=[0.02, 0.08, 0.98, 0.82], pad=1.3)
 
 
 
