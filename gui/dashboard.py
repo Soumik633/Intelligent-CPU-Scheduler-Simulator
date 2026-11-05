@@ -71,13 +71,9 @@ class CPUSchedulerDashboard:
 
 
 
-    # --------------------------------------------------
-
     # STYLE CONFIGURATION
 
-    # --------------------------------------------------
-
-
+   
 
     def configure_styles(self):
 
@@ -246,13 +242,7 @@ class CPUSchedulerDashboard:
         )
 
 
-
-    # --------------------------------------------------
-
     # MAIN DASHBOARD
-
-    # --------------------------------------------------
-
 
 
     def create_dashboard(self):
@@ -344,13 +334,7 @@ class CPUSchedulerDashboard:
         )
 
 
-
-    # --------------------------------------------------
-
     # HEADER
-
-    # --------------------------------------------------
-
 
 
     def create_header(self, parent):
@@ -410,13 +394,7 @@ class CPUSchedulerDashboard:
         ).pack(anchor="w", pady=(4, 0))
 
 
-
-    # --------------------------------------------------
-
     # PROCESS INPUT AND ALGORITHM CONTROLS
-
-    # --------------------------------------------------
-
 
 
     def create_control_section(self, parent):
@@ -838,13 +816,7 @@ class CPUSchedulerDashboard:
         ).pack(side="left")
 
 
-
-    # --------------------------------------------------
-
     # PROCESS AND RESULT TABLES
-
-    # --------------------------------------------------
-
 
 
     def create_tables(self, parent):
@@ -1094,13 +1066,7 @@ class CPUSchedulerDashboard:
         )
 
 
-
-    # --------------------------------------------------
-
     # PERFORMANCE METRIC CARDS
-
-    # --------------------------------------------------
-
 
 
     def create_metrics(self, parent):
@@ -1218,12 +1184,7 @@ class CPUSchedulerDashboard:
             self.metric_labels[key] = value_label
 
 
-
-    # --------------------------------------------------
-
     # GANTT CHART SECTION
-
-    # --------------------------------------------------
 
 
 
@@ -1295,13 +1256,7 @@ class CPUSchedulerDashboard:
 
 
 
-
-    # --------------------------------------------------
-
     # ADD NEW PROCESS
-
-    # --------------------------------------------------
-
 
 
     def add_process(self):
@@ -1503,12 +1458,7 @@ class CPUSchedulerDashboard:
         )
 
 
-
-    # --------------------------------------------------
-
     # DELETE SELECTED PROCESS
-
-    # --------------------------------------------------
 
 
 
@@ -1567,12 +1517,7 @@ class CPUSchedulerDashboard:
         )
 
 
-
-    # --------------------------------------------------
-
     # CLEAR ALL PROCESSES
-
-    # --------------------------------------------------
 
 
 
@@ -1606,13 +1551,8 @@ class CPUSchedulerDashboard:
 
 
 
-    # --------------------------------------------------
 
     # RUN CPU SCHEDULING SIMULATION
-
-    # --------------------------------------------------
-
-
 
     def run_simulation(self):
 
@@ -1787,12 +1727,7 @@ class CPUSchedulerDashboard:
 
 
 
-    # --------------------------------------------------
-
     # DISPLAY PROCESS PERFORMANCE
-
-    # --------------------------------------------------
-
 
 
     def display_results(self, performance):
@@ -1866,13 +1801,7 @@ class CPUSchedulerDashboard:
         )
 
 
-
-    # --------------------------------------------------
-
     # DISPLAY GANTT CHART INSIDE TKINTER
-
-    # --------------------------------------------------
-
 
 
     def display_gantt_chart(self, gantt, algorithm):
@@ -1949,13 +1878,7 @@ class CPUSchedulerDashboard:
         self.current_figure = fig
 
 
-
-    # --------------------------------------------------
-
     # CLEAR GANTT CHART
-
-    # --------------------------------------------------
-
 
 
     def clear_chart(self):
@@ -1999,14 +1922,7 @@ class CPUSchedulerDashboard:
         self.chart_placeholder.pack(expand=True)
 
 
-
-    # --------------------------------------------------
-
     # RESET PERFORMANCE RESULTS
-
-    # --------------------------------------------------
-
-
 
     def reset_results(self, update_status=True):
 
@@ -2040,14 +1956,7 @@ class CPUSchedulerDashboard:
 
 
 
-
-
-# ------------------------------------------------------
-
 # APPLICATION ENTRY FOR DIRECT DASHBOARD TESTING
-
-# ------------------------------------------------------
-
 
 
 def main():
